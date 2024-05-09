@@ -74,13 +74,15 @@ body {
 
 footer {
     text-align: center;
-    padding: 2px;  
-    background-color: transparent; 
+    padding: 5px;  /* Reduced padding for smaller height */
+    background-color: transparent; /* Make the footer background transparent */
     width: 100%;
     position: absolute;
     bottom: 0;
-    font-size: 14px;  
+    font-size: 14px;  /* Adjust the font size for a more compact look */
+}
 
 footer a {
     color: red;
     text-decoration: none;
+}
