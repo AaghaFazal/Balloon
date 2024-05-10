@@ -24,25 +24,13 @@ body {
 
 .balloon {
     position: absolute;
-    width: 40px;
-    height: 70px;
-    background-color: red;
+    width: 60px; /* Set the desired width */
+    height: 85px; /* Set the desired height */
+    background-image: url('balloon.png'); /* Use balloon.png as background */
+    background-size: cover; /* Adjust the size of the image to cover the balloon */
     border-radius: 50%/70%; /* Oval shape */
     cursor: pointer;
     animation: moveBalloon 5s linear infinite;
-}
-
-.balloon::after {
-    content: '';
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 10px 0 10px;
-    border-color: red transparent transparent transparent; /* Balloon tail */
 }
 
 .blast {
@@ -59,7 +47,7 @@ body {
         top: 100vh;
     }
     to {
-        top: -70px;
+        top: -85px;
     }
 }
 
@@ -74,12 +62,12 @@ body {
 
 footer {
     text-align: center;
-    padding: 5px;  /* Reduced padding for smaller height */
+    padding: 5px; /* Reduced padding for smaller height */
     background-color: transparent; /* Make the footer background transparent */
     width: 100%;
     position: absolute;
     bottom: 0;
-    font-size: 14px;  /* Adjust the font size for a more compact look */
+    font-size: 14px; /* Adjust the font size for a more compact look */
 }
 
 footer a {
